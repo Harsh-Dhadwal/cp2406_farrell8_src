@@ -5,7 +5,7 @@ public class DebugSix2
 {
    public static void main(String args[])
    {
-      char letter;
+      char letter = 'a';
       int a;
       final int MIN = 65;
       final int MAX = 122;
@@ -14,8 +14,8 @@ public class DebugSix2
       for(a = MIN; a <= MAX; a++)
         letter = (char)a;
         System.out.print("  " + letter);
-        if((a == STOPLINE1) & (a == STOPLINE2))
+        if((a == STOPLINE1) || (a == STOPLINE2))
           System.out.println();
-      System.out.println("\nEnd of application")
+      System.out.println("\nEnd of application");
     }
 }

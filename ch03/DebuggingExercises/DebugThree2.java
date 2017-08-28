@@ -8,14 +8,14 @@ public class DebugThree2
       add(b, c);
       subtract(c, a);            
    }
-   public static void add()
+   private static void add(int a, int b)
    {
       System.out.println("The sum of " + a +
-         and + b + is + a + b);
+         " and " + b + " is " + (a + b));
    }
-   public void subtract()
+   private static void subtract(int a, int b)
    {
       System.out.println("The difference between " +
-        a + and + b + is + a - b);
+        a + " and " + b + " is " + (a - b));
    }
 }

@@ -1,9 +1,11 @@
+package DebuggingExercises;
+
 public class DebugBox
 {
    private int width;
    private int length;
    private int height;
-   private FixDebugBox()
+   public DebugBox()
    {
       length = 1;
       width = 1;
@@ -11,14 +13,14 @@ public class DebugBox
    }
    public DebugBox(int width, int length, int height)
    {
-      width = width;
-      length = length;
-      height = height;
+      this.width = width;
+      this.length = length;
+      this.height = height;
    }
    public void showData()
    {
-     System.out.println("Width: "  + width + "  Length: " +
-       length + "  Height: " + height);
+     System.out.println("Width: "  + this.width + "  Length: " +
+       this.length + "  Height: " + this.height);
    }
    public double getVolume()
    { 

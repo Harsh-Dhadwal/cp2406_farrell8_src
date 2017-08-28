@@ -17,7 +17,7 @@ public class DebugSix4
       low = input.nextInt();
       System.out.print("Enter high value... ");
       high = input.nextInt();
-      while(low == high)
+      while(low >= high)
       {
          System.out.println("The number you entered for a high number, " +
             high + ", is not more than " + low);
@@ -25,14 +25,14 @@ public class DebugSix4
          high = input.nextInt();
       }
 
-      while(count < low)
+      for(count = 0; count < NUM;)
       {
          double result = Math.random();
           // random() returns value between 0 and 1
          int answer = (int) (result * 10 + low);
           // multiply by 10 and add low -- random is at least the value of low
           // only use answer if it is low enough
-         if(answer <= low)
+         if(answer >= low & answer <= high)
          {
             System.out.print(answer + "  ");
             ++count;
