@@ -1,8 +1,10 @@
+package CodeInFigures;
+
 import java.util.Scanner;
 public class EnumDemo
 {
    enum Month {JAN, FEB, MAR, APR, MAY, JUN,
-      JUL, AUG, SEP, OCT, NOV, DEC};
+      JUL, AUG, SEP, OCT, NOV, DEC}
 
    public static void main(String[] args)
    {

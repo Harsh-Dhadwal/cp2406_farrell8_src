@@ -1,12 +1,14 @@
 import javax.swing.*;
+import java.lang.reflect.Array;
+
 public class DebugNine2
 {/*
    public static void main(String[] args)
    {
-      Movie[] movies = new Movie[8];
+      String[][] movies = new String[8][2];
       int i;
       String message, entry;
-      Movies[0] = new Movie("The Godfather", 1972);
+      movies[0] = ["The Godfather", 1972];
       movies[1] = new Movie("The Good, the Bad, and the Ugly", 1966);
       movies[2] = new Movie("Pulp Fiction", 1994);
       Movie[3] = new Movie("Shindler's List", 1993);

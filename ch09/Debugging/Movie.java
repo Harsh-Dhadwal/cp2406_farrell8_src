@@ -1,5 +1,7 @@
+package Debugging;
+
 public class Movie
-{/*
+{
    private String name;
    private int year;
    Movie(String s, int y)
@@ -14,5 +16,5 @@ public class Movie
    public int getYear()
    {
       return year;
-   }*/
+   }
 }

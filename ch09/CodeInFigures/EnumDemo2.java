@@ -6,7 +6,7 @@ public class EnumDemo2
 
    public static void main(String[] args)
    {
-      Property propForSale = Property.MULTIPLE_FAMILY;
+      Property propForSale = Property.BUSINESS;
       switch(propForSale)
       {
          case SINGLE_FAMILY: 

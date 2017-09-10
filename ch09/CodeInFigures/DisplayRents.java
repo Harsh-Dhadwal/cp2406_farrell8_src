@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 class DisplayRents
 {
    public static void main(String[] args)

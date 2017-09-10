@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.util.ArrayList;
 public class ArrayListDemo2
