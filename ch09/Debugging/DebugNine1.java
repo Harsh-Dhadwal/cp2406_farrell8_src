@@ -1,9 +1,9 @@
-// Looks up author of selected books
+package Debugging;// Looks up author of selected books
 import javax.swing.*;
 class DebugNine1
 {
    public static void main(String[] args)
-   {
+   {/*
       String[][] books = new String[6][2]; 
       books[0][0] = "Ulysses";
       books[0][1] = "James Joyce";
@@ -37,7 +37,7 @@ class DebugNine1
             }
          if(isFound)
             JOptionPane.showMessageDialog(null, "Sorry - no such book in our database");
-      }
+      }*/
    }
 }
    

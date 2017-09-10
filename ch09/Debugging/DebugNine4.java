@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class DebugNine4
-{
+{/*
    enum Planet {MERCURY, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE};
 
    public static void main(String[] args)
@@ -16,5 +16,5 @@ public class DebugNine4
       System.out.println("You entered " + planet);
       pos =  planet.ordinal();
       System.out.println(planet + " is " + position + 1 + " planet(s) from the sun");
-   }
+   }*/
 }

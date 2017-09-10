@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.util.ArrayList;
 public class ArrayListDemo
 {

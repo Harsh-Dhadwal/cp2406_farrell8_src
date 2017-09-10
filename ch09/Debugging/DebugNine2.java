@@ -1,6 +1,6 @@
 import javax.swing.*;
 public class DebugNine2
-{
+{/*
    public static void main(String[] args)
    {
       Movie[] movies = new Movie[8];
@@ -68,5 +68,5 @@ public class DebugNine2
         for (int i = 0; i < len; i++)
            msg = msg + s[i].getName() + ", " + s[i].getYear() + "\n";
         JOptionPane.showMessageDialog(null, msg);
-     }
+     }*/
 }
