@@ -1,36 +1,39 @@
+package Debugging;
+
+import Debugging.Movie;
 import javax.swing.*;
 import java.lang.reflect.Array;
 
 public class DebugNine2
-{/*
+{
    public static void main(String[] args)
    {
-      String[][] movies = new String[8][2];
+      Movie[] movies = new Movie[8];
       int i;
       String message, entry;
-      movies[0] = ["The Godfather", 1972];
+      movies[0] = new Movie("The Godfather", 1972);
       movies[1] = new Movie("The Good, the Bad, and the Ugly", 1966);
       movies[2] = new Movie("Pulp Fiction", 1994);
-      Movie[3] = new Movie("Shindler's List", 1993);
-      Movie[4] = new Movie("Casablanca", 1942);
+      movies[3] = new Movie("Shindler's List", 1993);
+      movies[4] = new Movie("Casablanca", 1942);
       movies[5] = new Movie("Wizard of Oz", 1939);
       movies[6] = new Movie("Citizen Kane", 1941);
-      moVies[7] = new Movie("Some Like It Hot", 1959);
+      movies[7] = new Movie("Some Like It Hot", 1959);
       entry = JOptionPane.showInputDialog(null,
         "Sort Movies by\n(N)ame, or (Y)ear");
-      if(entry == 'N')
+      if(entry.equals("N"))
       {
-         nameSort(Movie);
+         nameSort(movies);
          message = "Sorted by Name\n";
       }
       else
       {
-          yearSort(year);
+          yearSort(movies);
           message = "Sorted by Year\n";
       }   
-      display(movie, message);
+      display(movies, message);
    }
-   public static void nameSort(Movie[] array)
+   private static void nameSort(Movie[] array)
    {
       int a, b;
       int highSub = array.length - 1;
@@ -42,18 +45,18 @@ public class DebugNine2
              String second = array[b + 1].getName();
              if(first.compareTo(second) > 0)
 	     {
-	        temp = array[b];
+	        Movie temp = array[b];
 	        array[b] = array[b + 1];
 	        array[b + 1] = temp;
 	     }
 	  }
        }
     }
-    public static void yearSort(Movie[] array)
+    private static void yearSort(Movie[] array)
     {
         int a, b;
         Movie temp;
-        int highSub = array.length;
+        int highSub = array.length-1;
         for (a = 0; a < highSub; ++a)
         {
            for (b = 0; b < highSub; ++b)
@@ -65,10 +68,9 @@ public class DebugNine2
            }
         }
      }
-     public static void display(Movie s,  String msg)
+     private static void display(Movie[] array, String msg)
      {
-        for (int i = 0; i < len; i++)
-           msg = msg + s[i].getName() + ", " + s[i].getYear() + "\n";
+         for (Movie anArray : array) msg = msg + anArray.getName() + ", " + anArray.getYear() + "\n";
         JOptionPane.showMessageDialog(null, msg);
-     }*/
+     }
 }
