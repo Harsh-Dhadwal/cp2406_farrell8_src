@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class EmployeeWithTerritory extends Employee
 {
    private int territory;

@@ -1,6 +1,8 @@
+package CodeInFigures;
+
 public class ASuperClass
 {
-   public ASuperClass()
+   public void ASuperClass()
    {
       System.out.println("In superclass constructor");
    }

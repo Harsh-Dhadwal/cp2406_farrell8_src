@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class Student
 {
    private int idNum;

@@ -1,16 +1,18 @@
+package Debugging;
+
 public class DebugMusical extends DebugPlay
 {
-   protected String composer;
+   private String composer;
    
-   DebugMusical(String title, String author, String comp)
+   public DebugMusical(String title, String author, String comp)
    {
-      super(title);
-      composer = composer;
+      super(title, author);
+      composer = comp;
    }
    public void display()
    {
-      System.out.println("The performance is  + title +
-        " by " + author + "\nThe music for " + title 
+      System.out.println("The performance is " + title +
+        " by " + author + "\nThe music for " + title +
         " is by " + composer);
    }
 }

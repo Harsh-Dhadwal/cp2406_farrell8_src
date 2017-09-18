@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class ProfessionalBasketballPlayer extends BasketballPlayer
 {
    double salary;

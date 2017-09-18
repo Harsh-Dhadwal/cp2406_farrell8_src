@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class TestProPlayer
 {
    public static void main(String[] args)

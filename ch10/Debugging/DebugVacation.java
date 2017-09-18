@@ -1,7 +1,9 @@
+package Debugging;
+
 public class DebugVacation
 {
-   private int days;
-   public DebugVacation()
+   public int days;
+   DebugVacation()
    {
       days = 10;
    }

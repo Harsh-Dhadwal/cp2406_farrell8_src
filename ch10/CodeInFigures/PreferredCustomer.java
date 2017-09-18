@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class PreferredCustomer extends Customer
 {
    double discountRate;

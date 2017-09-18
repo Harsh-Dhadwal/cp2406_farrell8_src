@@ -1,4 +1,4 @@
-// A PhoneBook is a Book with a city
+package Debugging;// A PhoneBook is a Book with a city
 import javax.swing.*;
 public class DebugTen3
 {
@@ -6,12 +6,15 @@ public class DebugTen3
    {
       String area, inStr;
       int pages;
+
       area = JOptionPane.showInputDialog(null, 
          "Enter city for phone book");
       inStr = JOptionPane.showInputDialog(null, 
          "Enter number of pages in " + area + "'s phone book");
+
       pages = Integer.parseInt(inStr);
-      DebugPhoneBook pb = new DebugPhoneBook();
+
+      DebugPhoneBook pb = new DebugPhoneBook(pages, area);
       pb.display();
    }
 }

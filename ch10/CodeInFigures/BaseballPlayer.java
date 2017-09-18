@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class BaseballPlayer
 {
    private int jerseyNumber;

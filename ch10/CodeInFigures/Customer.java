@@ -1,7 +1,10 @@
+package CodeInFigures;
+
 public class Customer
 {
    private int idNumber;
    private double balanceOwed;
+
    public Customer(int id, double bal)
    {
       idNumber = id;

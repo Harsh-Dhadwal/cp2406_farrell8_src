@@ -1,4 +1,6 @@
-public final class HideAndGoSeekPlayer
+package CodeInFigures;
+
+public class HideAndGoSeekPlayer
 {
    private int count;
    public void displayRules()

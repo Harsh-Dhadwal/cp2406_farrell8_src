@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class TestCustomers
 {
    public static void main(String[] args)
