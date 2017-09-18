@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class DisplayDog
 {
    public static void main(String[] args)

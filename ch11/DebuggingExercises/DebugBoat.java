@@ -1,9 +1,12 @@
+package DebuggingExercises;
+
 public abstract class DebugBoat
 {
-   String boatType = new String();
+   private String boatType;
    int passengers;
-   String power = new String();
-   public DebugBoat(String bt)
+   String power;
+
+   DebugBoat(String bt)
    {
       boatType = bt;
    }
@@ -12,17 +15,15 @@ public abstract class DebugBoat
    public boolean equals(DebugBoat otherBoat)
    {
       boolean result;
-      if((passengers == otherBoat.passengers) && (power.equals(otherBoat.power)))
-         result = true;
-      else
-         result = false;
-      return result;
+       result = (this.passengers == otherBoat.passengers) && (this.power.equals(otherBoat.power));
+       return result;
    }
    public String toString()
    {
       return("This " + boatType + "boat carries " + passengers +
         " and is powered by " + power);
    }
+
    public abstract void setPower();
    public abstract void setPassengers();
 }

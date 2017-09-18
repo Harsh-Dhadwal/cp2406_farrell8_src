@@ -1,8 +1,10 @@
+package DebuggingExercises;
+
 public class DebugOceanLiner extends DebugBoat
 {
    public DebugOceanLiner()
    {
-      Debug("ocean liner ");
+      super("ocean liner ");
       setPassengers();
       setPower();
    }
@@ -10,7 +12,7 @@ public class DebugOceanLiner extends DebugBoat
    {
       super.passengers = 2400;
    }
-   public void power()
+   public void setPower()
    {
       super.power = "four engines";
    }

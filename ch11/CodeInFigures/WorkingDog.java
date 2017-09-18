@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class WorkingDog extends Dog implements Worker
 {
    private int hoursOfTraining;

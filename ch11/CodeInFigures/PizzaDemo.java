@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class PizzaDemo implements PizzaConstants
 {
    public static void main(String[] args)

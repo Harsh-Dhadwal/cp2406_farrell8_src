@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class CompareAccounts
 {
    public static void main(String[] args)

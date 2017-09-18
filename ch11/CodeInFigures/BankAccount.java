@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class BankAccount
 {
    private int acctNum;

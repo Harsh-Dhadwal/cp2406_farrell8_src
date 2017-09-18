@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public interface PizzaConstants
 {
    public static final int SMALL_DIAMETER = 12;

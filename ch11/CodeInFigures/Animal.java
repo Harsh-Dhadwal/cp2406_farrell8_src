@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public abstract class Animal
 {
    private String name;

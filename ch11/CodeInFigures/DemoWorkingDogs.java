@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class DemoWorkingDogs
 {
    public static void main(String[] args)

@@ -1,6 +1,7 @@
+package DebuggingExercises;
 public class DebugRowboat extends DebugBoat
 {
-   public DebugRowboat()
+   DebugRowboat()
    {
       super("row");
    }

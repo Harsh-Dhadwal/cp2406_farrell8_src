@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class TalkingAnimalDemo
 {
    public static void main(String[] args)

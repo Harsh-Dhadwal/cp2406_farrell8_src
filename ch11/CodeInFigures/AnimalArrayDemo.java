@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class AnimalArrayDemo
 {
    public static void main(String[] args)

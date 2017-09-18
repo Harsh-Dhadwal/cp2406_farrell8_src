@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class UseAnimals
 {
    public static void main(String[] args)

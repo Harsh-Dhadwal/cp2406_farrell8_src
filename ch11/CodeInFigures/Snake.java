@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class Snake extends Animal
 {
    @Override

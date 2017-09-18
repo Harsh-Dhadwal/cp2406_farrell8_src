@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class AnimalReference
 {
    public static void main(String[] args)

@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 public class Cow extends Animal
 {
    @Override

@@ -1,3 +1,7 @@
+package CodeInFigures;
+
+import CodeInFigures.Animal;
+
 public class Dog extends Animal
 {
    @Override
