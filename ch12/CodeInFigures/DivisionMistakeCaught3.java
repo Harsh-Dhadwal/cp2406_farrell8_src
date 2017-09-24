@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.*;
-public class DivisionMistakeCaught3
+class DivisionMistakeCaught3
 {
    public static void main(String[] args)
    {

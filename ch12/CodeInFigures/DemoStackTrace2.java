@@ -1,10 +1,12 @@
-public class DemoStackTrace2
+package CodeInFigures;
+
+class DemoStackTrace2
 {
    public static void main(String[] args)
    {
       methodA();  // line 5
    }
-   public static void methodA()
+   private static void methodA()
    {
       System.out.println("In methodA()");
       try
@@ -20,12 +22,12 @@ public class DemoStackTrace2
       System.out.println("Application could continue " +
          "from this point.");
    }
-   public static void methodB()
+   private static void methodB()
    {
       System.out.println("In methodB()");
       methodC();  // line 26
    }
-   public static void methodC()
+   private static void methodC()
    {
       System.out.println("In methodC()");
       int[] array = {0, 1, 2};

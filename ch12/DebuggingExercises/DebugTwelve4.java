@@ -1,40 +1,40 @@
-// An employee ID can't be more than 999
+package DebuggingExercises;// An employee ID can't be more than 999
 // Keep executing until user enters four valid employee IDs
-// This program throws a FixDebugEmployeeIDException
+// This program throws a DebugEmployeeIDException
 import javax.swing.*;
-public class DebugTwelve4
+class DebugTwelve4
 {
-   public static void main(String[] args)
-   {
+   public static void main(String[] args) throws DebugEmployeeIDException {
       String inStr, outString = "";
       final int MAX = 999;
       int[] emp = new int[4];
-      for(x = 0; x < emp.length; ++x)
+      for(int x = 0; x < emp.length; ++x)
       {
-         inStr = JOptionPane.showInputDialog(null, "Enter employee ID number");  
-         throw
+         inStr = JOptionPane.showInputDialog(null, "Enter employee ID number");
+
+         try
          {
-            emp[x] = Integer.parseInt(inStr);
+             emp[x] = Integer.parseInt(inStr);
             if(emp[x] > MAX)
             {
-               throw(new FixDebugEmployeeIDException("Number too high " + emp[x]));
+               throw(new DebugEmployeeIDException("Number too high " + emp[x]));
             }
          }
          catch(NumberFormatException error)
          {	
             --x;
-            JOptionPane.showMessageDialog(null, inStr + "\nNonnumeric ID");
+            JOptionPane.showMessageDialog(null, inStr + "\nNon-numeric ID");
          }
-         catc(FixDebugEmployeeIDException error)
+         catch(DebugEmployeeIDException error)
          {	
-	    --x;
-            JOptionPane.showMmrge");
+	        --x;
+            JOptionPane.showMessageDialog(null, inStr + "\nID can't be more than 999" );
          }
       }
       for(int x = 0; x < emp.length; ++x)
       {
          outString = outString + emp[x] + " ";
       }
-      JOptionPane.showMessageDialog(null, "Four valid IDS are: " + outString);    
+      JOptionPane.showMessageDialog(null, "Four valid IDS are: " + outString);
    }
 }

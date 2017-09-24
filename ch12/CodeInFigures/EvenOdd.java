@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.Scanner;
-public class EvenOdd
+class EvenOdd
 {
    public static void main(String[] args) 
    {  
@@ -12,7 +14,7 @@ public class EvenOdd
        else
           System.out.println(number + " is odd");
    }
-   public static boolean isEven(int number)
+   private static boolean isEven(int number)
    {
       boolean result;
       if(number % 2 == 1)

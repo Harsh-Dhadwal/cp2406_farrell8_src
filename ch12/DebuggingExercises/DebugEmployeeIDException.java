@@ -1,6 +1,8 @@
-public class DebugEmployeeIDException extends Exception
+package DebuggingExercises;
+
+class DebugEmployeeIDException extends Exception
 {
-   public DebugEmployeeIDException()
+   public DebugEmployeeIDException(String s)
    {
       super(s);
    }

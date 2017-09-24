@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.*;
-public class PriceListApplication1
+class PriceListApplication1
 {
    public static void main(String[] args)
    {

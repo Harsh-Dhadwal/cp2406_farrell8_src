@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import javax.swing.*;
-public class UseCustomerAccount
+class UseCustomerAccount
 {
    public static void main(String[] args)
    {

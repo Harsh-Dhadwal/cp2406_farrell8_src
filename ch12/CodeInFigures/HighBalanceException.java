@@ -1,4 +1,6 @@
-public class HighBalanceException extends Exception
+package CodeInFigures;
+
+class HighBalanceException extends Exception
 {
    public HighBalanceException()
    {

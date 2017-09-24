@@ -1,6 +1,8 @@
+package CodeInFigures;
+
 import java.util.Scanner;
 import java.io.IOException;
-public class VirtualKeyboardDemo
+class VirtualKeyboardDemo
 {
     public static void main(String[] args)
     {

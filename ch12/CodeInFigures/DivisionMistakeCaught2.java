@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.Scanner;
-public class DivisionMistakeCaught2
+class DivisionMistakeCaught2
 {
    public static void main(String[] args)
    {

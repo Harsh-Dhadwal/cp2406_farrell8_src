@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.*;
-public class DivisionMistakeCaught4
+class DivisionMistakeCaught4
 {
    public static void main(String[] args)
    {
@@ -19,6 +21,6 @@ public class DivisionMistakeCaught4
       {
          System.out.println("Operation unsuccessful");
       }
-      System.out.println(“End of program”);
+      System.out.println("End of program");
    }
 }

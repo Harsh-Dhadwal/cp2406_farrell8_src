@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.Scanner;
-public class Division
+class Division
 {
    public static void main(String[] args)
    {

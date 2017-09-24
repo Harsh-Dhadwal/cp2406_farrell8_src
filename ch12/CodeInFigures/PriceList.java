@@ -1,4 +1,6 @@
-public class PriceList
+package CodeInFigures;
+
+class PriceList
 {
    private static final double[] price = {15.99, 27.88, 34.56, 45.89};
    public static void displayPrice(int item) throws IndexOutOfBoundsException

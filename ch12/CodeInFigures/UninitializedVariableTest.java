@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.util.Scanner;
 class UninitializedVariableTest
 {
@@ -14,7 +16,7 @@ class UninitializedVariableTest
       {
          System.out.println("Exception occurred");
       }  
-      System.out.println("x is " + x); 
+      System.out.println("x is uninitialized");
    }
 }
       

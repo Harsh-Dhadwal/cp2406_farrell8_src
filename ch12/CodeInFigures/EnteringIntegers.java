@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import java.util.Scanner;
-public class EnteringIntegers
+class EnteringIntegers
 {
    public static void main(String[] args)
    {
