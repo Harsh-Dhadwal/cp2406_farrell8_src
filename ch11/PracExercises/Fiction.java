@@ -1,7 +1,7 @@
 package PracExercises;
 
 public class Fiction extends Book{
-    public Fiction(String name){
+    Fiction(String name){
         super(name);
         setPrice();
     }

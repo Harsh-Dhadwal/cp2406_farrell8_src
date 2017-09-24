@@ -1,6 +1,6 @@
 package PracExercises;
 
-public abstract class Book {
+abstract class Book {
     private String title;
     double price;
 
@@ -8,14 +8,14 @@ public abstract class Book {
         this.title = title;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 
-    public double getPrice() {
+    double getPrice() {
         return price;
     }
 
-    public abstract void setPrice();
+    abstract void setPrice();
 
 }

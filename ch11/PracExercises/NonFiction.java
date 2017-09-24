@@ -1,7 +1,7 @@
 package PracExercises;
 
 public class NonFiction extends Book{
-    public NonFiction(String name){
+    NonFiction(String name){
         super(name);
         setPrice();
     }

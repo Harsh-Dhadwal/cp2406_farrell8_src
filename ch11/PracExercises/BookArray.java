@@ -1,5 +1,7 @@
 package PracExercises;
 
+import java.util.Random;
+
 public class BookArray {
     public static void main(String[] args) {
         String[] fictionTitles = {
@@ -25,10 +27,8 @@ public class BookArray {
                 "The Second Sex by Simone de Beauvoir",
                 "The Prince by Niccolò Machiavelli",
                 "Don’t Sweat the Small Stuff by Richard Carlson"};
-        int minimum = 0;
-        int maximum = 10;
-        int rand1 = minimum + (int)(Math.random() * maximum);
-        int rand2 = 9 - rand1;
+
+        int rand1 = randInt(0, 9);
 
         Book[] bookArray = new Book[10];
 
@@ -45,5 +45,16 @@ public class BookArray {
             System.out.println(bookArray[j].getTitle() + " for $" + bookArray[j].getPrice());
         }
 
+    }
+
+    public static int randInt(int min, int max){
+        int rInt = min + (int)(Math.random() * (max + 1));
+        return rInt;
+    }
+
+    public static int randInt2(int min, int max){
+        Random random = new Random();
+        int rInt = random.nextInt((max-min)) + min;
+        return rInt;
     }
 }
