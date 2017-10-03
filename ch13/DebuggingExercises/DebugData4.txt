@@ -1,4 +1,2 @@
-steak,20
-lobster,30
-macaroni,8
-spaghetti,10
+Steak,40
+Pasta,20

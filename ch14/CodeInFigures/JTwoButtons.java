@@ -1,12 +1,15 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
-public class JTwoButtons extends JFrame
+class JTwoButtons extends JFrame
 {
-   JButton button1 = new JButton("Enabled");
-   JButton button2 = new JButton("Disabled");
-   public JTwoButtons()
+
+   private JTwoButtons()
    {
-      add(button1);  
+      JButton button1 = new JButton("Enabled");
+      add(button1);
+      JButton button2 = new JButton("Disabled");
       add(button2);
       button2.setEnabled(false);
       setLayout(new FlowLayout());

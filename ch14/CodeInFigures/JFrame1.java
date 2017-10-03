@@ -1,5 +1,7 @@
+package CodeInFigures;
+
 import javax.swing.*;
-public class JFrame1
+class JFrame1
 {
    public static void main(String[] args)
    {

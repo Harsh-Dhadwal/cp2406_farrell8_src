@@ -1,4 +1,6 @@
-public class JHelloDemo
+package CodeInFigures;
+
+class JHelloDemo
 {
    public static void main(String[] args)
    {

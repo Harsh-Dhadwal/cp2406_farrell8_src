@@ -31,9 +31,8 @@ class DebugTwelve4
             JOptionPane.showMessageDialog(null, inStr + "\nID can't be more than 999" );
          }
       }
-      for(int x = 0; x < emp.length; ++x)
-      {
-         outString = outString + emp[x] + " ";
+      for (int anEmp : emp) {
+         outString = outString + anEmp + " ";
       }
       JOptionPane.showMessageDialog(null, "Four valid IDS are: " + outString);
    }

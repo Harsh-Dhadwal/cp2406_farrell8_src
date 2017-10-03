@@ -1,14 +1,17 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
-public class JFrameWithManyComponents extends JFrame
+class JFrameWithManyComponents extends JFrame
 {
-   final int FRAME_WIDTH = 300;
-   final int FRAME_HEIGHT = 150;
-   public JFrameWithManyComponents()
+
+    public JFrameWithManyComponents()
    {
       super("Demonstrating many components");
-      setSize(FRAME_WIDTH, FRAME_HEIGHT);
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       int FRAME_HEIGHT = 150;
+       int FRAME_WIDTH = 300;
+       setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       JLabel heading = new JLabel("This frame has many components");
       heading.setFont(new Font("Arial", Font.BOLD, 16));
       JLabel namePrompt = new JLabel("Enter your name:");

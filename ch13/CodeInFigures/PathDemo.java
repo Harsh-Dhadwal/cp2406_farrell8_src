@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.nio.file.*;
 public class PathDemo
 {

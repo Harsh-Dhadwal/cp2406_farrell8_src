@@ -1,7 +1,9 @@
+package CodeInFigures;
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-public class ComboBoxDemonstration extends JFrame implements ItemListener
+class ComboBoxDemonstration extends JFrame implements ItemListener
 {
    FlowLayout flow = new FlowLayout();
    JLabel label = new JLabel("What would you like to drink?");
@@ -10,10 +12,10 @@ public class ComboBoxDemonstration extends JFrame implements ItemListener
    JCheckBox milk = new JCheckBox("Milk", false);
    JCheckBox water = new JCheckBox("Water", false);
    ButtonGroup group = new ButtonGroup();
-   public ComboBoxDemonstration()
+   private ComboBoxDemonstration()
    {
       super("ComboBox Demonstration");
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       setLayout(new FlowLayout());
       JComboBox<String> majorChoice = new JComboBox<String>();
       majorChoice.addItem("English");

@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.nio.file.*;
 import java.io.*;
 import java.nio.channels.FileChannel;

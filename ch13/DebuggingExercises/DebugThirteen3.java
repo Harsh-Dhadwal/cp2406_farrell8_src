@@ -1,4 +1,4 @@
-// Crestes a file of entrees sold at a restaurant
+package DebuggingExercises;// Creates a file of entrees sold at a restaurant
 import java.nio.file.*;
 import java.io.*;
 import static java.nio.file.AccessMode.*;
@@ -7,9 +7,12 @@ public class DebugThirteen3
 {
    public static void main(String[] args)
    {
+      Path pathToProject = Paths.get("DebuggingExercises");
+      String s = pathToProject.toAbsolutePath().toString();
+
       Path file =
-         Paths.get("C:\\Java\\Chapter.13\\DebugData4.txt");
-      Scanner kb = new Scanner();
+         Paths.get(s + "/DebugData4.txt");
+      Scanner kb = new Scanner(System.in);
       String[] array = new String[2];
       String string = "";
       String delimiter = ",";
@@ -20,7 +23,7 @@ public class DebugThirteen3
       {
          OutputStream output = new BufferedOutputStream(Files.newOutputStream(file));
          BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(output));
-         System.out.print("Enter first entree or " + QUIT + " to quit >> ");        
+         System.out.print("Enter first entree or " + QUIT + " to quit >> ");
          entree = kb.nextLine();
          while(!entree.equals(QUIT))
          {
@@ -29,7 +32,7 @@ public class DebugThirteen3
             string = entree + delimiter + price +
               System.getProperty("line.separator");
             writer.write(string, 0, string.length());
-            System.out.print("Enter next entree or " + QUIT + " to quit >> ");        
+            System.out.print("Enter next entree or " + QUIT + " to quit >> ");
             entree = kb.nextLine();
          }
          writer.close();

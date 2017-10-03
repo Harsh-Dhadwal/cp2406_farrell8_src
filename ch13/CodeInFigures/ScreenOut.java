@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.io.*;
 public class ScreenOut
 {

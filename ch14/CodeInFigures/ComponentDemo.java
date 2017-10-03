@@ -1,4 +1,6 @@
-public class ComponentDemo
+package CodeInFigures;
+
+class ComponentDemo
 {
    public static void main(String[] args)
    {

@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.nio.file.*;
 import java.io.*;
 public class ReadEmployeeFile
@@ -6,6 +8,7 @@ public class ReadEmployeeFile
    {
       Path file =
          Paths.get("C:\\Java\\Chapter.13\\Employees.txt");
+      String s = "";
       try
       {
          InputStream input = new BufferedInputStream(Files.newInputStream(file));

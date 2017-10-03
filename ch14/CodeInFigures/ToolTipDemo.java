@@ -1,4 +1,6 @@
-public class ToolTipDemo
+package CodeInFigures;
+
+class ToolTipDemo
 {
    public static void main(String[] args)
    {

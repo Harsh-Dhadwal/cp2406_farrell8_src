@@ -1,27 +1,30 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class JHelloFrame extends JFrame implements ActionListener
+class JHelloFrame extends JFrame implements ActionListener
 {
-   JLabel question = new JLabel("What is your name?");
-   Font bigFont = new Font("Arial", Font.BOLD, 16);
-   JTextField answer = new JTextField(10);
-   JButton pressMe = new JButton("Press me");
-   JLabel greeting = new JLabel("");
-   final int WIDTH = 275;
-   final int HEIGHT = 225;
-   public JHelloFrame()
+    private JTextField answer = new JTextField(10);
+    private JLabel greeting = new JLabel("");
+
+    public JHelloFrame()
    {
       super("Hello Frame");
-      setSize(WIDTH, HEIGHT);
+       int HEIGHT = 225;
+       int WIDTH = 275;
+       setSize(WIDTH, HEIGHT);
       setLayout(new FlowLayout());
-      question.setFont(bigFont);
+       Font bigFont = new Font("Arial", Font.BOLD, 16);
+       JLabel question = new JLabel("What is your name?");
+       question.setFont(bigFont);
       greeting.setFont(bigFont);
       add(question);
       add(answer);
-      add(pressMe);
+       JButton pressMe = new JButton("Press me");
+       add(pressMe);
       add(greeting);
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       pressMe.addActionListener(this);
     }
    @Override

@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.nio.file.*;
 import java.io.*;
 import static java.nio.file.AccessMode.*;

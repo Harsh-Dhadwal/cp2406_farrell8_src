@@ -1,24 +1,27 @@
+package CodeInFigures;
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-public class CheckBoxDemonstration extends JFrame implements ItemListener
+class CheckBoxDemonstration extends JFrame implements ItemListener
 {
    FlowLayout flow = new FlowLayout();
-   JLabel label = new JLabel("What would you like to drink?");
-   JCheckBox coffee = new JCheckBox("Coffee", false);
-   JCheckBox cola = new JCheckBox("Cola", false);
-   JCheckBox milk = new JCheckBox("Milk", false);
-   JCheckBox water = new JCheckBox("Water", false);
-   public CheckBoxDemonstration()
+
+    private CheckBoxDemonstration()
    {
       super("CheckBox Demonstration");
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       setLayout(new FlowLayout());
-      label.setFont(new Font("Arial", Font.ITALIC, 22));
-      coffee.addItemListener(this);
-      cola.addItemListener(this);
-      milk.addItemListener(this);
-      water.addItemListener(this);
+       JLabel label = new JLabel("What would you like to drink?");
+       label.setFont(new Font("Arial", Font.ITALIC, 22));
+       JCheckBox coffee = new JCheckBox("Coffee", false);
+       coffee.addItemListener(this);
+       JCheckBox cola = new JCheckBox("Cola", false);
+       cola.addItemListener(this);
+       JCheckBox milk = new JCheckBox("Milk", false);
+       milk.addItemListener(this);
+       JCheckBox water = new JCheckBox("Water", false);
+       water.addItemListener(this);
       add(label);
       add(coffee);
       add(cola);

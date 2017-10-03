@@ -1,3 +1,5 @@
+package CodeInFigures;
+
 import java.util.Scanner;
 import java.nio.file.*;
 public class PathDemo2

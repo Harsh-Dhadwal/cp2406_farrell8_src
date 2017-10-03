@@ -1,6 +1,8 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
-public class JFrame6
+class JFrame6
 {
    public static void main(String[] args)
    {
@@ -9,7 +11,7 @@ public class JFrame6
       JFrame aFrame = new JFrame("Sixth frame");
       aFrame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
       aFrame.setVisible(true);
-      aFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      aFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       JLabel greeting = new JLabel("Hello");
       JLabel greeting2 = new JLabel("Who are you?");
       aFrame.setLayout(new FlowLayout());

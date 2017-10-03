@@ -1,13 +1,16 @@
+package CodeInFigures;
+
 import javax.swing.*;
-public class JMyFrame extends JFrame
+class JMyFrame extends JFrame
 {
-   final int WIDTH = 200;
-   final int HEIGHT = 120;
-   public JMyFrame()
+
+    public JMyFrame()
    {
       super("My frame");
-      setSize(WIDTH, HEIGHT);
+       int HEIGHT = 120;
+       int WIDTH = 200;
+       setSize(WIDTH, HEIGHT);
       setVisible(true);
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
    }
 }

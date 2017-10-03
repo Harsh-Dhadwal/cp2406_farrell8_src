@@ -1,4 +1,6 @@
-public class CreateTwoJMyFrameObjects
+package CodeInFigures;
+
+class CreateTwoJMyFrameObjects
 {
    public static void main(String[] args)
    {
