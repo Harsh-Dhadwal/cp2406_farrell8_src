@@ -1,14 +1,17 @@
+package CodeInFigures;
+
 import java.awt.*;
 import javax.swing.*;
-public class JFrameWithExplicitContentPane extends JFrame
+class JFrameWithExplicitContentPane extends JFrame
 {
-   private final int SIZE = 180;
-   private Container con = getContentPane();
-   private JButton button = new JButton("Press Me");
-   public JFrameWithExplicitContentPane()
+
+   private JFrameWithExplicitContentPane()
    {
+      int SIZE = 180;
       setSize(SIZE, SIZE);
+      Container con = getContentPane();
       con.setLayout(new FlowLayout());
+      JButton button = new JButton("Press Me");
       con.add(button);
    }
    public static void main(String[] args)

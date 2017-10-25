@@ -1,36 +1,38 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class JMenuFrame3 extends JFrame
+class JMenuFrame3 extends JFrame
 {
-   private JMenuBar mainBar = new JMenuBar();
-   private JMenu menu1 = new JMenu("File");
-   private JCheckBoxMenuItem check1 = new
-      JCheckBoxMenuItem("Check box A");
-   private JCheckBoxMenuItem check2 = new
-      JCheckBoxMenuItem("Check box B");
-   private JRadioButtonMenuItem radio1 = new
-      JRadioButtonMenuItem("Radio option 1");
-   private JRadioButtonMenuItem radio2 = new
-      JRadioButtonMenuItem("Radio option 2");
-   private JRadioButtonMenuItem radio3 = new
-      JRadioButtonMenuItem("Radio option 3");
-   private ButtonGroup group = new ButtonGroup();
 
-   public JMenuFrame3()
+    private JMenuFrame3()
    {
       setLayout(new FlowLayout());
-      setJMenuBar(mainBar);
-      menu1.setMnemonic('F');
+       JMenuBar mainBar = new JMenuBar();
+       setJMenuBar(mainBar);
+       JMenu menu1 = new JMenu("File");
+       menu1.setMnemonic('F');
       mainBar.add(menu1);
 
-      menu1.add(check1);
-      menu1.add(check2);
+       JCheckBoxMenuItem check1 = new
+               JCheckBoxMenuItem("Check box A");
+       menu1.add(check1);
+       JCheckBoxMenuItem check2 = new
+               JCheckBoxMenuItem("Check box B");
+       menu1.add(check2);
       menu1.addSeparator();
-      menu1.add(radio1);
-      menu1.add(radio2);
-      menu1.add(radio3);
-      group.add(radio1);
+       JRadioButtonMenuItem radio1 = new
+               JRadioButtonMenuItem("Radio option 1");
+       menu1.add(radio1);
+       JRadioButtonMenuItem radio2 = new
+               JRadioButtonMenuItem("Radio option 2");
+       menu1.add(radio2);
+       JRadioButtonMenuItem radio3 = new
+               JRadioButtonMenuItem("Radio option 3");
+       menu1.add(radio3);
+       ButtonGroup group = new ButtonGroup();
+       group.add(radio1);
       group.add(radio2);
       group.add(radio3);
 

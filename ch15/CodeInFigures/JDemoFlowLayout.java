@@ -1,17 +1,19 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class JDemoFlowLayout extends JFrame implements ActionListener
+class JDemoFlowLayout extends JFrame implements ActionListener
 {
    private JButton leftButton = new JButton("L Button");
-   private JButton rightButton = new JButton("R Button");
-   private Container con = getContentPane();
+    private Container con = getContentPane();
    private FlowLayout layout = new FlowLayout();
-   public JDemoFlowLayout()
+   private JDemoFlowLayout()
    {
       con.setLayout(layout);
       con.add(leftButton);
-      con.add(rightButton);
+       JButton rightButton = new JButton("R Button");
+       con.add(rightButton);
       leftButton.addActionListener(this);
       rightButton.addActionListener(this);
       setSize(500, 100);

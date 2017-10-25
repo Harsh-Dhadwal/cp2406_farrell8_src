@@ -1,14 +1,12 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Color;
-public class JFrameWithPanels extends JFrame
+class JFrameWithPanels extends JFrame
 {
-   private final int WIDTH = 250;
-   private final int HEIGHT = 120;
-   private JButton button1 = new JButton("One");
-   private JButton button2 = new JButton("Two");
-   private JButton button3 = new JButton("Three");
-   public JFrameWithPanels()
+
+    private JFrameWithPanels()
    {
       JPanel panel1 = new JPanel();
       JPanel panel2 = new JPanel();
@@ -16,12 +14,17 @@ public class JFrameWithPanels extends JFrame
       con.setLayout(new FlowLayout());
       con.add(panel1);
       con.add(panel2);
-      panel1.add(button1);
+       JButton button1 = new JButton("One");
+       panel1.add(button1);
       panel1.setBackground(Color.BLUE);
-      panel2.add(button2);
-      panel2.add(button3);
+       JButton button2 = new JButton("Two");
+       panel2.add(button2);
+       JButton button3 = new JButton("Three");
+       panel2.add(button3);
       panel2.setBackground(Color.BLUE);
-      setSize(WIDTH, HEIGHT);
+       int HEIGHT = 120;
+       int WIDTH = 250;
+       setSize(WIDTH, HEIGHT);
    }
    public static void main(String[] args)
    {

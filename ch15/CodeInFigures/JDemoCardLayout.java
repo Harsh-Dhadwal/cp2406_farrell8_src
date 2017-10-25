@@ -1,20 +1,23 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class JDemoCardLayout extends JFrame implements ActionListener
+class JDemoCardLayout extends JFrame implements ActionListener
 {
    private CardLayout cards = new CardLayout();
-   private JButton b1 = new JButton("Ace of Hearts");
-   private JButton b2 = new JButton("Three of Spades");
-   private JButton b3 = new JButton("Queen of Clubs");
-   private Container con = getContentPane();
-   public JDemoCardLayout()
+
+   private JDemoCardLayout()
    {
+      Container con = getContentPane();
       con.setLayout(cards);
+      JButton b1 = new JButton("Ace of Hearts");
       con.add("ace", b1);
       b1.addActionListener(this);
+      JButton b2 = new JButton("Three of Spades");
       con.add("three", b2);
       b2.addActionListener(this);
+      JButton b3 = new JButton("Queen of Clubs");
       con.add("queen", b3);
       b3.addActionListener(this);
       setSize(200, 100);

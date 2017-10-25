@@ -1,29 +1,31 @@
-import java.awt.*;
+package CodeInFigures;
+
 import javax.swing.*;
-import java.awt.Color;
-public class Checkerboard extends JFrame
+import java.awt.*;
+
+class Checkerboard extends JFrame
 {
    private final int ROWS = 8;
    private final int COLS = 8;
-   private final int GAP = 2;
-   private final int NUM = ROWS * COLS;
-   private int x;
-   private JPanel pane = new JPanel
-      (new GridLayout(ROWS, COLS, GAP, GAP));
-   private JPanel[] panel = new JPanel[NUM];
-   private Color color1 = Color.WHITE;
-   private Color color2 = Color.BLUE;
-   private Color tempColor;
-   public Checkerboard()
+
+    private Checkerboard()
    {
+       int GAP = 2;
+       JPanel pane = new JPanel
+              (new GridLayout(ROWS, COLS, GAP, GAP));
       add(pane);
-      for(x = 0; x < NUM; ++x)
+      int x;
+       int NUM = ROWS * COLS;
+       for(x = 0; x < NUM; ++x)
       {
+         JPanel[] panel = new JPanel[NUM];
          panel[x] = new JPanel();
          pane.add(panel[x]);
+         Color color2 = Color.BLUE;
+         Color color1 = Color.WHITE;
          if(x % COLS == 0)
          {
-            tempColor = color1;
+            Color tempColor = color1;
             color1 = color2;
             color2 = tempColor;
          }

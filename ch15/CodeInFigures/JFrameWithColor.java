@@ -1,16 +1,19 @@
+package CodeInFigures;
+
 import java.awt.*;
 import java.awt.Color;
 import javax.swing.*;
-public class JFrameWithColor extends JFrame
+class JFrameWithColor extends JFrame
 {
-   private final int SIZE = 180;
-   private Container con = getContentPane();
-   private JButton button = new JButton("Press Me");
-   public JFrameWithColor()
+
+   private JFrameWithColor()
    {
+      int SIZE = 180;
       setSize(SIZE, SIZE);
       setVisible(true);
+      Container con = getContentPane();
       con.setLayout(new FlowLayout());
+      JButton button = new JButton("Press Me");
       con.add(button);
       con.setBackground(Color.YELLOW);
       button.setBackground(Color.RED);

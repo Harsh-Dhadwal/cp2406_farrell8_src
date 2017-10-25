@@ -1,21 +1,24 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
-public class JDemoBorderLayout extends JFrame
+class JDemoBorderLayout extends JFrame
 {
-   private JButton nb = new JButton("North Button");
-   private JButton sb = new JButton("South Button");
-   private JButton eb = new JButton("East Button");
-   private JButton wb = new JButton("West Button");
-   private JButton cb = new JButton("Center Button");
-   private Container con = getContentPane();
-   public JDemoBorderLayout()
+
+    private JDemoBorderLayout()
    {
-      con.setLayout(new BorderLayout());
-      con.add(nb, BorderLayout.NORTH);
-      con.add(sb, BorderLayout.SOUTH);
-      con.add(eb, BorderLayout.EAST);
-      con.add(wb, BorderLayout.WEST);
-      con.add(cb, BorderLayout.CENTER);
+       Container con = getContentPane();
+       con.setLayout(new BorderLayout());
+       JButton nb = new JButton("North Button");
+       con.add(nb, BorderLayout.NORTH);
+       JButton sb = new JButton("South Button");
+       con.add(sb, BorderLayout.SOUTH);
+       JButton eb = new JButton("East Button");
+       con.add(eb, BorderLayout.EAST);
+       JButton wb = new JButton("West Button");
+       con.add(wb, BorderLayout.WEST);
+       JButton cb = new JButton("Center Button");
+       con.add(cb, BorderLayout.CENTER);
       setSize(400, 150);
    }
    public static void main(String[] args)

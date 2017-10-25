@@ -1,13 +1,15 @@
+package CodeInFigures;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class JMouseActionFrame extends JFrame implements MouseListener
+class JMouseActionFrame extends JFrame implements MouseListener
 {
    private int x, y;
    private JLabel label= new JLabel("Do something with the mouse");
-   String msg = "";
+   private String msg = "";
 
-   public JMouseActionFrame()
+   private JMouseActionFrame()
    {
       setLayout(new FlowLayout());
       addMouseListener(this);

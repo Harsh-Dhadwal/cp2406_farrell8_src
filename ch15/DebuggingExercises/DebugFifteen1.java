@@ -1,37 +1,39 @@
+package DebuggingExercises;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.Color;
-public class DebugFifteen1 extends JFrame implements ActionListener
+class DebugFifteen1 extends JFrame implements ActionListener
 {
-   JButton button1 = new JButton("Red");
-   JButton button2 = new JButton("Pink");
-   JButton button3 = new JButton("Orange");
-   JButton button4 = new JButton("Yellow");
-   JButton button5 = new JButton("Black");
+   private JButton button1 = new JButton("Red");
+   private JButton button2 = new JButton("Pink");
+   private JButton button3 = new JButton("Orange");
+   private JButton button4 = new JButton("Yellow");
 
-   JPanel panel1 = new JPanel(new FlowLayout());
-   JPanel panel2 = new JPanel();
+    private JPanel panel2 = new JPanel();
 
-   public DebugFifteen1()
+   private DebugFifteen1()
    {
       setLayout(new GridLayout(1, 2));
-      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      add(panel1);
+      setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+       JPanel panel1 = new JPanel(new FlowLayout());
+       add(panel1);
       add(panel2);
       panel1.add(button1);
-      panel1.add(button1);
-      panel1.add(button1);
-      panel1.add(button1);
-      panel1.add(button1);
+      panel1.add(button2);
+      panel1.add(button3);
+      panel1.add(button4);
+       JButton button5 = new JButton("Black");
+       panel1.add(button5);
 
 
-      button1.addActionListener();
-      button2.addActionListener();
-      button3.addActionListener();
-      button4.addActionListener();
-      button5.addActionListener();
+      button1.addActionListener(this);
+      button2.addActionListener(this);
+      button3.addActionListener(this);
+      button4.addActionListener(this);
+      button5.addActionListener(this);
       setSize(400, 200);
       setVisible(true);
    }
@@ -48,7 +50,7 @@ public class DebugFifteen1 extends JFrame implements ActionListener
       else if(source  == button4)         
          panel2.setBackground(Color.YELLOW);
       else 
-         panel2.setBackground(Color.YELLOW);
+         panel2.setBackground(Color.BLACK);
    }
    public static void main(String[] args)
    {
